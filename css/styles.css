@@ -219,7 +219,7 @@ background-size: cover;
     border: 1px solid #8e8f99;
     margin-bottom: 8px;
 }
-.post-list-segment>.svg {
+.post-list-segment .svg {
     width: 64px;
     height: 64px;
 }
@@ -308,7 +308,7 @@ background-size: cover;
 .social a:focus {
     background-color: #404bbf;
 }
-.social-link-icon {
+.social .social-link-icon {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-page {
@@ -363,7 +363,6 @@ background-size: cover;
 .footer-container {
 display: flex;
 justify-content: flex-start;
-align-items: center;
 gap: 120px;
 align-items: baseline,
 }
@@ -404,7 +403,7 @@ align-items: baseline,
     justify-content: center;
     align-items: center;
 }
-.footer-social a {
+.footer-link {
     display: block;
     width: 40px;
     height: 40px;
@@ -415,8 +414,6 @@ align-items: baseline,
     fill: #f4f4fd;
     padding: 12px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.footer-link {
     display: flex;
     align-items: center;
     justify-content: center;

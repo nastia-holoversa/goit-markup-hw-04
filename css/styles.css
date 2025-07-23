@@ -38,6 +38,9 @@ img {
 }
 .header {
     border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .container {
     width: 1158px;
@@ -56,8 +59,10 @@ img {
 .header .nav {
     display: flex;
     align-items: center;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-logo {
+    position: relative;
     margin-right: 76px;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -98,6 +103,9 @@ img {
     height: 4px;
     border-radius: 2px;
     background-color: #404bbf;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
 }
 .address {
     font-style: normal;
@@ -106,10 +114,12 @@ img {
 .address .link-add {
     display: block;
     color: #434455;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .address .subaddress {
     display: flex;
     gap: 40px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .address .link-add:hover,
 .address .link-add:focus {
